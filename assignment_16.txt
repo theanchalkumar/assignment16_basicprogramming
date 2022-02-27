@@ -1,0 +1,99 @@
+1.
+
+def stutter(word):
+    s = word[:2]
+    return (2 * (s + '... ')) + word + '?'
+
+
+print(stutter("incredible"))
+
+2.
+
+Convert radians to degrees
+
+radians = 3.14159
+degrees = math.degrees(radians)
+print(degrees)
+
+Convert degrees to radians
+
+degrees = 90.0
+radians = math.radians(degrees)
+print(radians)
+
+3.
+
+import unittest
+
+
+def is_curzon(num: int) -> bool:
+    return False  # Put your code here!!!
+
+
+class Test(unittest.TestCase):
+    def test_1(self):
+        self.assertTrue(is_curzon(5))
+
+    def test_2(self):
+        self.assertFalse(is_curzon(10))
+
+    def test_3(self):
+        self.assertTrue(is_curzon(14))
+
+    def test_4(self):
+        self.assertTrue(is_curzon(86))
+
+    def test_5(self):
+        self.assertTrue(is_curzon(90))
+
+    def test_6(self):
+        self.assertFalse(is_curzon(115))
+
+    def test_7(self):
+        self.assertFalse(is_curzon(120))
+
+    def test_8(self):
+        self.assertTrue(is_curzon(194))
+
+    def test_9(self):
+        self.assertTrue(is_curzon(293))
+
+
+if __name__ == "__main__":
+    unittest.main()
+
+
+4.
+
+
+import math
+  
+# Function for calculating 
+# area of the hexagon.
+def hexagonArea(s):
+      
+    return ((3 * math.sqrt(3) * 
+            (s * s)) / 2); 
+      
+# Driver code     
+if __name__ == "__main__" : 
+  
+    # length of a side. 
+    s = 4
+  
+    print("Area:","{0:.4f}" . 
+           format(hexagonArea(s)))
+
+5.
+
+function binary(decimal) {
+  let result = "";
+  if (decimal == 0) {
+    result = "0";
+  }
+  while (decimal > 0) {
+      result += decimal % 2;
+      decimal = Math.floor(decimal/2);
+    };
+  return result.split("").reverse().join("");
+}
